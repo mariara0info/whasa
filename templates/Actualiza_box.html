@@ -1,0 +1,31 @@
+
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">    
+ <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS_for_Textbox.css') }}">
+</head> <body>
+<div class="wrapper">
+<div class="header"><h1>Verificador de Grupos de Whatsapp</h1></div>
+<div class="body"><br><h2 align="center" style="color:#000"><strong>Actualizar Grupos</strong></h2><right><a href="{{ url_for('upload_file')}}"> Home Page   </a></right><br>
+{% with messages = get_flashed_messages()  %}
+{% if messages %}
+{% for message in messages %}
+<div align="center" style="color:#000"><h2> {{ message }} </h2></div><br>
+{% endfor %}
+{% endif %}
+{% endwith %}
+<div class="border"><br><br>
+<div class="marginformleft"> 
+<form action="/cambio" method="POST" >
+<p align="center"><b>Nota: </b>Solo la Categoria Necesitas Para La Actualizacion. </p> <br>
+<p>Categoria: <input type = "text" name = "name" id="name" placeholder="categoria" /></p></br>
+<br></div>
+<center><input type="submit" value=" Actualizacion " style="font-size: larger"></center><br><br>
+</form>
+
+
+ </div><br><br></div>
+<div class="footer">
+<marquee scrollamount="2" behavior="alternate"> <h1>VERIFICACION DE WHATSAPP</h1></marquee>
+</div></div></body></html>

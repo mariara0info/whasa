@@ -1,0 +1,21 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">    
+ <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS_for_Textbox.css') }}">
+</head> <body>
+<div class="wrapper">
+<div class="header"><h1>Linkpiador de Grupos de Whatsapp</h1></div>
+<div class="body"><br><h2 align="center" style="color:#000"><strong>Registros de Grupos de Whatsapp</strong></h2><br>
+<div class="border"><br><br>
+<div class="marginformleft"> 
+<form action="/upload" method="POST" enctype="multipart/form-data">
+<p>Upload File: <input type = "file" name = "archivo" /></p><br>
+<p><b>Nota: </b>Solo archivos txt. </p> <br>
+<br></div>
+<center><input type="submit" value=" Verificar " style="font-size: larger"></center><br><br>
+</form>
+ </div><br><br></div>
+<div class="footer">
+<marquee scrollamount="2" behavior="alternate"> <h1>VERIFICACION DE WHATSAPP</h1></marquee>
+</div></div></body></html>
